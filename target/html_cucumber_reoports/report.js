@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("test.nov21/testFeature.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/test.nov21/testFeature.feature");
 formatter.feature({
   "id": "to-test-the-framework",
   "tags": [
@@ -13,7 +13,7 @@ formatter.feature({
   "line": 2
 });
 formatter.before({
-  "duration": 11781302414,
+  "duration": 7223998764,
   "status": "passed"
 });
 formatter.scenario({
@@ -43,25 +43,25 @@ formatter.match({
   "location": "LoginTest.the_user_logins()"
 });
 formatter.result({
-  "duration": 52699314525,
+  "duration": 45760827469,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.user_gets_to_the_home_page()"
 });
 formatter.result({
-  "duration": 13461574265,
+  "duration": 18649995832,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.user_should_see_the_company_logo()"
 });
 formatter.result({
-  "duration": 3808882209,
+  "duration": 4973607903,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2877490915,
+  "duration": 518574273,
   "status": "passed"
 });
 });

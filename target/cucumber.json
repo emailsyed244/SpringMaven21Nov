@@ -16,7 +16,7 @@
         "after": [
           {
             "result": {
-              "duration": 2877490915,
+              "duration": 518574273,
               "status": "passed"
             },
             "match": {
@@ -28,7 +28,7 @@
         "before": [
           {
             "result": {
-              "duration": 11781302414,
+              "duration": 7223998764,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "steps": [
           {
             "result": {
-              "duration": 52699314525,
+              "duration": 45760827469,
               "status": "passed"
             },
             "name": "the user logins",
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 13461574265,
+              "duration": 18649995832,
               "status": "passed"
             },
             "name": "user gets to the home page",
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 3808882209,
+              "duration": 4973607903,
               "status": "passed"
             },
             "name": "user should see the company logo",
@@ -81,6 +81,6 @@
         "type": "scenario"
       }
     ],
-    "uri": "test.nov21/testFeature.feature"
+    "uri": "src/test/resources/test.nov21/testFeature.feature"
   }
 ]
