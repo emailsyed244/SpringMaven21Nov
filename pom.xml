@@ -13,17 +13,27 @@
   <url>http://maven.apache.org</url>
 
     <properties>
+      <project.name>Syed_PPI</project.name>
       <cucumber-jvm_version>1.2.2</cucumber-jvm_version>
       <selenium_version>2.47.1</selenium_version>
       <spring_version>4.2.2.RELEASE</spring_version>
       <driverType>firefox</driverType>
+      <reportBuilder>true</reportBuilder>
       <baseTest>QED</baseTest>
+      <project.build.directory>${basedir}\target</project.build.directory>
       <chromeDriverPath>${basedir}\src\main\resources\drivers\chromedriver.exe</chromeDriverPath>
       <ieDriverPath>${basedir}\src\main\resources\drivers\IEDriverServer.exe</ieDriverPath>
       <cobalt.users.xls.path>src/test/resources/CobaltUsers.xlsx</cobalt.users.xls.path>
     </properties>
 
-      <build>
+    <repositories>
+        <repository>
+            <id>project.local</id>
+            <name>project</name>
+            <url>file:///${basedir}/repo</url>
+        </repository>
+    </repositories>
+    <build>
 
           <plugins>
 
@@ -52,13 +62,46 @@
                           <baseTest>${baseTest}</baseTest>
                           <webdriver.chrome.driver>${chromeDriverPath}</webdriver.chrome.driver>
                           <webdriver.ie.driver>${ieDriverPath}</webdriver.ie.driver>
+                          <reportBuilder>${reportBuilder}</reportBuilder>
                       </systemPropertyVariables>
                   </configuration>
               </plugin>
+              <!--<plugin>-->
+                  <!--<groupId>net.masterthought</groupId>-->
+                  <!--<artifactId>maven-cucumber-reporting</artifactId>-->
+                  <!--<version>0.1.0</version>-->
+                  <!--<executions>-->
+                      <!--<execution>-->
+                          <!--<id>execution</id>-->
+                          <!--<phase>verify</phase>-->
+                          <!--<goals>-->
+                              <!--<goal>generate</goal>-->
+                          <!--</goals>-->
+                          <!--<configuration>-->
+                              <!--<projectName>${project.name}</projectName>-->
+                              <!--<outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>-->
+                              <!--<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>-->
+                              <!--<enableFlashCharts>false</enableFlashCharts>-->
+                          <!--</configuration>-->
+                      <!--</execution>-->
+                  <!--</executions>-->
+              <!--</plugin>-->
           </plugins>
       </build>
 
     <dependencies>
+         <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-server</artifactId>
+            <version>${selenium_version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sourceforge.htmlunit</groupId>
+            <artifactId>htmlunit</artifactId>
+            <version>2.13</version>
+        </dependency>
+
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -159,6 +202,26 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.6</version>
+        </dependency>
+        <dependency>
+            <groupId>net.cucumber</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>net.masterthought</groupId>-->
+            <!--<artifactId>cucumber-reporting</artifactId>-->
+            <!--<version>1.2.0</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.github.mkolisnyk</groupId>-->
+            <!--<artifactId>cucumber-reports</artifactId>-->
+            <!--<version>1.0.1</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.8.3</version>
         </dependency>
 
     </dependencies>

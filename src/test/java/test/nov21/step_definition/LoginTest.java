@@ -45,8 +45,21 @@ public class LoginTest extends BaseStepDef {
     @Then("^user should see the company logo$")
     public void user_should_see_the_company_logo() throws Throwable {
         System.out.println("user should see the company logo..!");
-        assertTrue("Logo is not visible..!",header.companyLogo().isDisplayed());
+        assertTrue("Logo is not visible..!", header.companyLogo().isDisplayed());
         assertTrue(false);
+    }
+    @When("^user clicks on \"(.*)\" link$")
+    public void user_clicksOnLink(String linkText) throws Throwable {
+        commonMethods.waitElementByLinkText(linkText);
+        header.getDriver().navigate().back();
+    }
+    @When("^user should see the \"(.*)\" page$")
+    public void userShouldSeePage(String linkText) throws Throwable {
+       if(linkText.equalsIgnoreCase("History")){
+           assertTrue(true);
+       }else{
+           assertTrue(false);
+       }
     }
 
 }
