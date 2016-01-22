@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: RunCukeTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 147.384 sec <<< FAILURE! - in RunCukeTest
+Then user should see the company logo(Scenario: Verify the Company logo)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError
+
+Scenario: Verify the Company logo  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError
+
+Then user should see the "Favourite" page(Scenario: Verify the Favourite Page)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError
+
+Scenario: Verify the Favourite Page  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError
+

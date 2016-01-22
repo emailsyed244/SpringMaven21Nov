@@ -1,0 +1,33 @@
+@firstProg
+Feature: To test the framework
+[34mhttps://a.uk.practicallaw.qed.thomsonreuters.com/Search/Home.html?transitionType=Default&contextData=(sc.Default)&bhcp=1&OWSessionId=06689024a135455393b72571a366c148&skipAnonymous=true&firstPage=true[0m
+
+  Scenario: Verify the Company logo       [90m# test.nov21/testFeature.feature:4[0m
+    [32mGiven [0m[32mthe user logins[0m                 [90m# LoginTest.the_user_logins()[0m
+    [32mWhen [0m[32muser gets to the home page[0m       [90m# LoginTest.user_gets_to_the_home_page()[0m
+    [31mThen [0m[31muser should see the company logo[0m [90m# LoginTest.user_should_see_the_company_logo()[0m
+      [31mjava.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at test.nov21.step_definition.LoginTest.user_should_see_the_company_logo(LoginTest.java:49)
+      	at ✽.Then user should see the company logo(test.nov21/testFeature.feature:7)
+      [0m
+
+  Scenario: Verify the History Page         [90m# test.nov21/testFeature.feature:10[0m
+    [32mGiven [0m[32mthe user logins[0m                   [90m# LoginTest.the_user_logins()[0m
+    [32mWhen [0m[32muser clicks on "[0m[32m[1mHistory[0m[32m" link[0m      [90m# LoginTest.user_clicksOnLink(String)[0m
+    [32mThen [0m[32muser should see the "[0m[32m[1mHistory[0m[32m" page[0m [90m# LoginTest.userShouldSeePage(String)[0m
+[34mhttps://a.uk.practicallaw.qed.thomsonreuters.com/Search/Home.html?transitionType=Default&contextData=(sc.Default)&bhcp=1&OWSessionId=a02e1a9c4dd84211b809f33f9083e84f&skipAnonymous=true&firstPage=true[0m
+
+  Scenario: Verify the Favourite Page         [90m# test.nov21/testFeature.feature:15[0m
+    [32mGiven [0m[32mthe user logins[0m                     [90m# LoginTest.the_user_logins()[0m
+    [32mWhen [0m[32muser clicks on "[0m[32m[1mFavourites[0m[32m" link[0m     [90m# LoginTest.user_clicksOnLink(String)[0m
+    [31mThen [0m[31muser should see the "[0m[31m[1mFavourite[0m[31m" page[0m [90m# LoginTest.userShouldSeePage(String)[0m
+      [31mjava.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at test.nov21.step_definition.LoginTest.userShouldSeePage(LoginTest.java:61)
+      	at ✽.Then user should see the "Favourite" page(test.nov21/testFeature.feature:18)
+      [0m
