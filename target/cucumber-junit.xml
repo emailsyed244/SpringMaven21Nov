@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="145.563634">
-<testcase classname="To test the framework" name="Verify the Company logo" time="76.529346">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="118.023131">
+<testcase classname="To test the framework" name="Verify the Company logo" time="62.160953">
 <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at test.nov21.step_definition.LoginTest.user_should_see_the_company_logo(LoginTest.java:49)&#13;&#10;&#9;at ✽.Then user should see the company logo(test.nov21/testFeature.feature:7)&#13;&#10;"><![CDATA[Given the user logins.......................................................passed
 When user gets to the home page.............................................passed
 Then user should see the company logo.......................................failed
@@ -13,13 +13,13 @@ java.lang.AssertionError
 	at ✽.Then user should see the company logo(test.nov21/testFeature.feature:7)
 ]]></failure>
 </testcase>
-<testcase classname="To test the framework" name="Verify the History Page" time="34.952328">
+<testcase classname="To test the framework" name="Verify the History Page" time="28.502121">
 <system-out><![CDATA[Given the user logins.......................................................passed
 When user clicks on "History" link..........................................passed
 Then user should see the "History" page.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To test the framework" name="Verify the Favourite Page" time="34.08196">
+<testcase classname="To test the framework" name="Verify the Favourite Page" time="27.360057">
 <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at test.nov21.step_definition.LoginTest.userShouldSeePage(LoginTest.java:61)&#13;&#10;&#9;at ✽.Then user should see the &quot;Favourite&quot; page(test.nov21/testFeature.feature:18)&#13;&#10;"><![CDATA[Given the user logins.......................................................passed
 When user clicks on "Favourites" link.......................................passed
 Then user should see the "Favourite" page...................................failed

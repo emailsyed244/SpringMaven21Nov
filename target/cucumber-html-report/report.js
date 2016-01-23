@@ -13,7 +13,7 @@ formatter.feature({
   "line": 2
 });
 formatter.before({
-  "duration": 17170625372,
+  "duration": 26606885042,
   "status": "passed"
 });
 formatter.scenario({
@@ -43,32 +43,32 @@ formatter.match({
   "location": "LoginTest.the_user_logins()"
 });
 formatter.result({
-  "duration": 38172765736,
+  "duration": 21429234440,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.user_gets_to_the_home_page()"
 });
 formatter.result({
-  "duration": 15369024109,
+  "duration": 13038484668,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.user_should_see_the_company_logo()"
 });
 formatter.result({
-  "duration": 5181204704,
+  "duration": 296834932,
   "status": "failed",
   "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat test.nov21.step_definition.LoginTest.user_should_see_the_company_logo(LoginTest.java:49)\r\n\tat ✽.Then user should see the company logo(test.nov21/testFeature.feature:7)\r\n"
 });
-formatter.write("https://a.uk.practicallaw.qed.thomsonreuters.com/Search/Home.html?transitionType\u003dDefault\u0026contextData\u003d(sc.Default)\u0026bhcp\u003d1\u0026OWSessionId\u003d06689024a135455393b72571a366c148\u0026skipAnonymous\u003dtrue\u0026firstPage\u003dtrue");
+formatter.write("https://a.uk.practicallaw.demo.thomsonreuters.com/Search/Home.html?transitionType\u003dDefault\u0026contextData\u003d(sc.Default)\u0026bhcp\u003d1\u0026OWSessionId\u003d5c1a435e57d3474881d26e0cb14f1cc9\u0026skipAnonymous\u003dtrue\u0026firstPage\u003dtrue");
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 635726416,
+  "duration": 789514153,
   "status": "passed"
 });
 formatter.before({
-  "duration": 506753388,
+  "duration": 7734875407,
   "status": "passed"
 });
 formatter.scenario({
@@ -98,7 +98,7 @@ formatter.match({
   "location": "LoginTest.the_user_logins()"
 });
 formatter.result({
-  "duration": 29124298761,
+  "duration": 18166719612,
   "status": "passed"
 });
 formatter.match({
@@ -111,7 +111,7 @@ formatter.match({
   "location": "LoginTest.user_clicksOnLink(String)"
 });
 formatter.result({
-  "duration": 5320986630,
+  "duration": 2600160102,
   "status": "passed"
 });
 formatter.match({
@@ -124,15 +124,15 @@ formatter.match({
   "location": "LoginTest.userShouldSeePage(String)"
 });
 formatter.result({
-  "duration": 177409,
+  "duration": 248530,
   "status": "passed"
 });
 formatter.after({
-  "duration": 112214,
+  "duration": 116956,
   "status": "passed"
 });
 formatter.before({
-  "duration": 927425977,
+  "duration": 5877069144,
   "status": "passed"
 });
 formatter.scenario({
@@ -162,7 +162,7 @@ formatter.match({
   "location": "LoginTest.the_user_logins()"
 });
 formatter.result({
-  "duration": 27009343003,
+  "duration": 18423796010,
   "status": "passed"
 });
 formatter.match({
@@ -175,7 +175,7 @@ formatter.match({
   "location": "LoginTest.user_clicksOnLink(String)"
 });
 formatter.result({
-  "duration": 4700256196,
+  "duration": 2580112515,
   "status": "passed"
 });
 formatter.match({
@@ -188,14 +188,14 @@ formatter.match({
   "location": "LoginTest.userShouldSeePage(String)"
 });
 formatter.result({
-  "duration": 524719,
+  "duration": 499827,
   "status": "failed",
   "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat test.nov21.step_definition.LoginTest.userShouldSeePage(LoginTest.java:61)\r\n\tat ✽.Then user should see the \"Favourite\" page(test.nov21/testFeature.feature:18)\r\n"
 });
-formatter.write("https://a.uk.practicallaw.qed.thomsonreuters.com/Search/Home.html?transitionType\u003dDefault\u0026contextData\u003d(sc.Default)\u0026bhcp\u003d1\u0026OWSessionId\u003da02e1a9c4dd84211b809f33f9083e84f\u0026skipAnonymous\u003dtrue\u0026firstPage\u003dtrue");
+formatter.write("https://a.uk.practicallaw.demo.thomsonreuters.com/Search/Home.html?transitionType\u003dDefault\u0026contextData\u003d(sc.Default)\u0026bhcp\u003d1\u0026OWSessionId\u003d575a794fd5cc445f8771b5c73c3194c8\u0026skipAnonymous\u003dtrue\u0026firstPage\u003dtrue");
 formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 1444410596,
+  "duration": 478579765,
   "status": "passed"
 });
 });

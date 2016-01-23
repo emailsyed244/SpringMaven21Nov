@@ -30,41 +30,14 @@ public class WebConnect {
 
    // private static Logger LOG= LoggerFactory.getLogger(WebConnect.class);
     private RemoteWebDriver driver;
-
-    @Value("${cucumberJsonFile}")
-    private String cucumberJsonFile;
-
-    @Value("${reportOutputRoot}")
-    private String reportOutputRoot;
-
-    @Value("${reportProject}")
-    private String reportProject;
-
-
-    @Value("${driverType}")
-    private String driverType;
+    public static String driverType;
 
     @Value("${reportBuilder}")
     private String reportBuilder;
 
-    public String getDriverType() {
-        return driverType;
-    }
-
-    public  String getCucumberJsonFile() {
-        return cucumberJsonFile;
-    }
-
-    public String getReportOutputRoot() {
-        return reportOutputRoot;
-    }
-
-    public String getReportProject() {
-        return reportProject;
-    }
-
-    public String getReportBuilder() {
-        return reportBuilder;
+    @Value("${driverType}")
+    public void setDriverType(String driverType1) {
+        driverType=driverType1;
     }
 
     public  RemoteWebDriver getDriver() {
@@ -79,10 +52,6 @@ public class WebConnect {
     }
     public void initSetup(){
         System.out.println(" init() method.........!");
-        System.out.println("Report builder : "+reportBuilder);
-        System.out.println("Report output : "+reportOutputRoot);
-        System.out.println("Report Project : "+reportProject);
-        System.out.println("Cucumber Json File : "+cucumberJsonFile);
         if(reportBuilder.equalsIgnoreCase("true")){
           CustomReportBuilder.runOnShutDown();
         }
@@ -91,55 +60,6 @@ public class WebConnect {
     public void closeSetup(){
         System.out.println(" close() method.........!");
         driver.quit();
-//       try {
-//
-//           Date date = new Date();
-//           SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
-//           String dateString = new SimpleDateFormat("dd-MMM-yyyy").format(date);
-//           String time = new SimpleDateFormat("HH.mm.ss").format(date);
-//
-//           //  String reportOutputDirectory = reportOutputRoot + "\\" + dateString + "\\" + time;
-//
-//         //  String customText = project + "<h3><BR/> Environment: <font color=\"red\">" + env + "</font>     Browser : <font color=\"blue\">" + browser + "</font>" + "     Run At: <font color=\"blue\">" + dateFormat.format(date) + "</font></h3>";
-//
-//           File reportOutputDirectory = new File("target");//+ "\\" + dateString + "\\" + time);
-//           List<String> jsonFiles = new ArrayList<>();
-//           jsonFiles.add("cucumber.json");
-//           //  jsonFiles.add("cucumber-report-2.json");
-//
-//           String jenkinsBasePath = "";
-//           String buildNumber = "1";
-//           String projectName = "Syed_PPIUK";
-//           boolean skippedFails = true;
-//           boolean pendingFails = false;
-//           boolean undefinedFails = true;
-//           boolean missingFails = true;
-//           boolean runWithJenkins = false;
-//           boolean parallelTesting = false;
-//
-//           Configuration configuration = new Configuration(reportOutputDirectory, projectName);
-//// optionally only if you need
-//           configuration.setStatusFlags(skippedFails, pendingFails, undefinedFails, missingFails);
-//           configuration.setParallelTesting(parallelTesting);
-//           configuration.setJenkinsBasePath(jenkinsBasePath);
-//           configuration.setRunWithJenkins(runWithJenkins);
-//           configuration.setBuildNumber(buildNumber);
-//   try{
-//           ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration);
-//           reportBuilder.generateReports();
-//       } catch (Exception e) {
-//           System.out.println("Unable to create Custom Report \n" + e.getMessage());
-//       }
-//
-//           CucumberResultsOverview results = new CucumberResultsOverview();
-//          results.setOutputDirectory(".//target");
-//          results.setOutputName(".//target1//cucumber-results");
-//           results.setSourceFile(".//target//cucumber.json");
-//           results.executeFeaturesOverviewReport();
-//      //     results.setScreenShotLocation("../src/test/resources/");
-//      }catch(Exception e){
-//           System.out.println(e.getMessage());
-//       }
     }
 
 //

@@ -1,6 +1,6 @@
 @firstProg
 Feature: To test the framework
-[34mhttps://a.uk.practicallaw.qed.thomsonreuters.com/Search/Home.html?transitionType=Default&contextData=(sc.Default)&bhcp=1&OWSessionId=06689024a135455393b72571a366c148&skipAnonymous=true&firstPage=true[0m
+[34mhttps://a.uk.practicallaw.demo.thomsonreuters.com/Search/Home.html?transitionType=Default&contextData=(sc.Default)&bhcp=1&OWSessionId=5c1a435e57d3474881d26e0cb14f1cc9&skipAnonymous=true&firstPage=true[0m
 
   Scenario: Verify the Company logo       [90m# test.nov21/testFeature.feature:4[0m
     [32mGiven [0m[32mthe user logins[0m                 [90m# LoginTest.the_user_logins()[0m
@@ -18,7 +18,7 @@ Feature: To test the framework
     [32mGiven [0m[32mthe user logins[0m                   [90m# LoginTest.the_user_logins()[0m
     [32mWhen [0m[32muser clicks on "[0m[32m[1mHistory[0m[32m" link[0m      [90m# LoginTest.user_clicksOnLink(String)[0m
     [32mThen [0m[32muser should see the "[0m[32m[1mHistory[0m[32m" page[0m [90m# LoginTest.userShouldSeePage(String)[0m
-[34mhttps://a.uk.practicallaw.qed.thomsonreuters.com/Search/Home.html?transitionType=Default&contextData=(sc.Default)&bhcp=1&OWSessionId=a02e1a9c4dd84211b809f33f9083e84f&skipAnonymous=true&firstPage=true[0m
+[34mhttps://a.uk.practicallaw.demo.thomsonreuters.com/Search/Home.html?transitionType=Default&contextData=(sc.Default)&bhcp=1&OWSessionId=575a794fd5cc445f8771b5c73c3194c8&skipAnonymous=true&firstPage=true[0m
 
   Scenario: Verify the Favourite Page         [90m# test.nov21/testFeature.feature:15[0m
     [32mGiven [0m[32mthe user logins[0m                     [90m# LoginTest.the_user_logins()[0m

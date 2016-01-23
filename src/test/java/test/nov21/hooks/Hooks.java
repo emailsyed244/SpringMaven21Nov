@@ -43,7 +43,7 @@ public class Hooks extends BaseStepDef {
     @After
     public void afterTest(Scenario scenario){
         LOG.info("Taking screenshot if test failed");
-        if (!webConnect.getDriverType().equalsIgnoreCase("browserStack")) {
+        if (!WebConnect.driverType.equalsIgnoreCase("browserStack")) {
             try {
 
                 if (scenario.isFailed()) {
