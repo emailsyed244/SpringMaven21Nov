@@ -18,14 +18,13 @@
       <selenium_version>2.47.1</selenium_version>
       <spring_version>4.2.2.RELEASE</spring_version>
       <driverType>firefox</driverType>
-      <reportBuilder>true</reportBuilder>
+      <reportBuilder>false</reportBuilder>
       <baseTest>QED</baseTest>
       <project.build.directory>${basedir}\target</project.build.directory>
       <chromeDriverPath>${basedir}\src\main\resources\drivers\chromedriver.exe</chromeDriverPath>
       <ieDriverPath>${basedir}\src\main\resources\drivers\IEDriverServer.exe</ieDriverPath>
       <cobalt.users.xls.path>src/test/resources/CobaltUsers.xlsx</cobalt.users.xls.path>
     </properties>
-
     <repositories>
         <repository>
             <id>project.local</id>
@@ -34,9 +33,7 @@
         </repository>
     </repositories>
     <build>
-
           <plugins>
-
               <plugin>
                   <groupId>org.apache.maven.plugins</groupId>
                   <artifactId>maven-compiler-plugin</artifactId>
@@ -46,11 +43,6 @@
                       <target>1.7</target>
                   </configuration>
               </plugin>
-              <!--<plugin>-->
-                  <!--<groupId>org.codehaus.mojo</groupId>-->
-                  <!--<artifactId>sonar-maven-plugin</artifactId>-->
-                  <!--<version>2.4</version>-->
-              <!--</plugin>-->
 
               <plugin>
                   <groupId>org.apache.maven.plugins</groupId>
@@ -58,12 +50,12 @@
                   <version>2.19</version>
                   <configuration>
                       <systemPropertyVariables>
-                          <driverType>${driverType}</driverType>
-                          <baseTest>${baseTest}</baseTest>
-                          <webdriver.chrome.driver>${chromeDriverPath}</webdriver.chrome.driver>
-                          <webdriver.ie.driver>${ieDriverPath}</webdriver.ie.driver>
-                          <reportBuilder>${reportBuilder}</reportBuilder>
-                      </systemPropertyVariables>
+                         <driverType>${driverType}</driverType>
+                         <baseTest>${baseTest}</baseTest>
+                         <webdriver.chrome.driver>${chromeDriverPath}</webdriver.chrome.driver>
+                         <webdriver.ie.driver>${ieDriverPath}</webdriver.ie.driver>
+                         <reportBuilder>${reportBuilder}</reportBuilder>
+                       </systemPropertyVariables>
                   </configuration>
               </plugin>
               <!--<plugin>-->
@@ -97,9 +89,9 @@
         </dependency>
 
         <dependency>
-            <groupId>net.sourceforge.htmlunit</groupId>
-            <artifactId>htmlunit</artifactId>
-            <version>2.13</version>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>${selenium_version}</version>
         </dependency>
 
         <dependency>
@@ -120,41 +112,11 @@
             <version>${cucumber-jvm_version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-html</artifactId>
-            <version>0.2.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium_version}</version>
-        </dependency>
-
         <!--<dependency>-->
-            <!--<groupId>org.seleniumhq.selenium</groupId>-->
-            <!--<artifactId>selenium-server</artifactId>-->
-            <!--<version>${selenium_version}</version>-->
+            <!--<groupId>info.cukes</groupId>-->
+            <!--<artifactId>cucumber-html</artifactId>-->
+            <!--<version>0.2.3</version>-->
         <!--</dependency>-->
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-api</artifactId>
-            <version>${selenium_version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-support</artifactId>
-            <version>${selenium_version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-htmlunit-driver</artifactId>
-            <version>${selenium_version}</version>
-        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -176,21 +138,10 @@
 
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-            <version>${spring_version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${spring_version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>${spring_version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -209,20 +160,15 @@
             <version>1.2</version>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>net.masterthought</groupId>-->
-            <!--<artifactId>cucumber-reporting</artifactId>-->
-            <!--<version>1.2.0</version>-->
+        <!--<groupId>net.masterthought</groupId>-->
+        <!--<artifactId>cucumber-reporting</artifactId>-->
+        <!--<version>1.2.0</version>-->
         <!--</dependency>-->
         <!--<dependency>-->
-            <!--<groupId>com.github.mkolisnyk</groupId>-->
+        <!--<groupId>com.github.mkolisnyk</groupId>-->
             <!--<artifactId>cucumber-reports</artifactId>-->
             <!--<version>1.0.1</version>-->
         <!--</dependency>-->
-        <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-            <version>1.8.3</version>
-        </dependency>
 
     </dependencies>
 </project>

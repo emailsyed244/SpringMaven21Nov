@@ -1,4 +1,4 @@
 test\nov21\step_definition\BaseStepDef.class
 test\nov21\step_definition\LoginTest.class
+test\nov21\RunCukeTest.class
 test\nov21\hooks\Hooks.class
-RunCukeTest.class

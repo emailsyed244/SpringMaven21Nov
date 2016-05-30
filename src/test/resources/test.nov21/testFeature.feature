@@ -1,6 +1,6 @@
-@firstProg
+@firstProg1
 Feature: As a User, I want to run Company Logo and History Tests
-
+  @wip
   Scenario: Verify the Company logo
     Given the user logins
     When user gets to the home page

@@ -17,16 +17,16 @@
     <context:property-placeholder location="configuration.properties" />
     <context:component-scan base-package="test.nov21" />
 
-    <bean id="glueCodeScope" class="cucumber.runtime.java.spring.GlueCodeScope">
-    </bean>
+    <!--<bean id="glueCodeScope" class="cucumber.runtime.java.spring.GlueCodeScope">-->
+    <!--</bean>-->
 
-    <bean id="glueCodeScopeConfigurer" class="org.springframework.beans.factory.config.CustomScopeConfigurer">
-        <property name="scopes">
-            <map>
-                <entry key="cucumber-glue" value-ref="glueCodeScope"/>
-            </map>
-        </property>
-    </bean>
+    <!--<bean id="glueCodeScopeConfigurer" class="org.springframework.beans.factory.config.CustomScopeConfigurer">-->
+        <!--<property name="scopes">-->
+            <!--<map>-->
+                <!--<entry key="cucumber-glue" value-ref="glueCodeScope"/>-->
+            <!--</map>-->
+        <!--</property>-->
+    <!--</bean>-->
 
 
     <!-- Classes that need to be autowired into tests -->

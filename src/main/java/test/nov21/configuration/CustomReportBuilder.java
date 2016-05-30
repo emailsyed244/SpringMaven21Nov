@@ -16,8 +16,6 @@ import java.util.Date;
 import java.util.List;
 
 public final class CustomReportBuilder {
-    @Autowired
-    private static WebConnect webConnect;
 
     private static final Logger LOG = LoggerFactory.getLogger(CustomReportBuilder.class);
 

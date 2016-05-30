@@ -20,9 +20,7 @@ public abstract class AbstractPage {
 
     private static final int DRIVER_WAIT_TIME = 60;
     protected static final Logger LOG = LoggerFactory.getLogger(AbstractPage.class);
-    public static final String ABOUT_BLANK = "about:blank";
-
-    @Autowired
+       @Autowired
     private WebConnect driver;
 
     @Autowired

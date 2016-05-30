@@ -1,4 +1,4 @@
-//import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
+package test.nov21;//import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 //import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 //import com.github.mkolisnyk.cucumber.runner.ExtendedCucumber;
 
@@ -27,8 +27,8 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber-html-report","junit:target/cucumber-junit.xml",
                 "json:target/cucumber.json","pretty:target/cucumber-pretty.txt"},
                // ,"usage:target/cucumber-usage.json"},
-       // features = {"src\\test\\resources\\test.nov21\\testFeature.feature"}
-        tags = {"@firstProg"}
+        features = {"src\\test\\resources\\test.nov21\\"},
+        tags = {"@firstProg1","~@wip"}
 
 )
 public class RunCukeTest {

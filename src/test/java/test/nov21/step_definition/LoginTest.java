@@ -28,9 +28,10 @@ public class LoginTest extends BaseStepDef {
 
     @Given("^the user logins$")
     public void the_user_logins() throws Throwable {
+
      commonMethods.waitElementByLinkText("Sign in").click();
-     loginPage.usernameTextField().sendKeys("topsecret1234");
-     loginPage.passwordTextField().sendKeys("Automation1234");
+     loginPage.usernameTextField().sendKeys(userLogin);//sendKeys("topsecret1234");
+     loginPage.passwordTextField().sendKeys(userPassword);//.sendKeys("Automation1234");
      loginPage.signOnButton().click();
     }
 

@@ -1,33 +1,8 @@
-@firstProg
-Feature: To test the framework
-[34mhttps://a.uk.practicallaw.demo.thomsonreuters.com/Search/Home.html?transitionType=Default&contextData=(sc.Default)&bhcp=1&OWSessionId=5c1a435e57d3474881d26e0cb14f1cc9&skipAnonymous=true&firstPage=true[0m
+@firstProg1
+Feature: As a User, I want to run Company Logo and History Tests
+https://signon.qa.thomsonreuters.com/?productid=PLCUK&viewproductid=PLCUK&lr=0&culture=en-GB&returnto=https%3a%2f%2fuk.practicallaw.qed.thomsonreuters.com%2fCosi%2fSignOn%3fredirectTo%3d%252fSearch%252fHome.html%253ftransitionType%253dDefault%2526contextData%253d(sc.Default)%2526bhcp%253d1%2526OWSessionId%253d996300a27fa34f1ba1a4a4cd6b48465e%2526skipAnonymous%253dtrue%2526firstPage%253dtrue&tracetoken=0530160432030Xucix7LjdigGehY3YDARgaIhX5SId7eA3Ss-mZuOkBqxWABUs_VRm6N3i0Ii7CgBs7-W6PJ1jAH6peVpg92oqdwg9awZ_fCWeYYw7cq_GNRecxrIZf7vQdBbz_vL4svRlsYe_GpehBuNhAx3rdO9DzcK6gWsC1RcUUB0jvsJ4X7U4QvdGKvyn6efVgwpx71FrHyLVJX1_TD0QxX_uaf4nL8L8-d58igzrtvhkU6kZ-2KhHv32klu44E48y1xP-hMGCUL_CRSKM45s_C5czXsJQsWTCBdirEiAT-PTSmlUCLS8MHdbDbdo31e3wDTbnfe&bhcp=1
 
-  Scenario: Verify the Company logo       [90m# test.nov21/testFeature.feature:4[0m
-    [32mGiven [0m[32mthe user logins[0m                 [90m# LoginTest.the_user_logins()[0m
-    [32mWhen [0m[32muser gets to the home page[0m       [90m# LoginTest.user_gets_to_the_home_page()[0m
-    [31mThen [0m[31muser should see the company logo[0m [90m# LoginTest.user_should_see_the_company_logo()[0m
-      [31mjava.lang.AssertionError
-      	at org.junit.Assert.fail(Assert.java:86)
-      	at org.junit.Assert.assertTrue(Assert.java:41)
-      	at org.junit.Assert.assertTrue(Assert.java:52)
-      	at test.nov21.step_definition.LoginTest.user_should_see_the_company_logo(LoginTest.java:49)
-      	at ✽.Then user should see the company logo(test.nov21/testFeature.feature:7)
-      [0m
-
-  Scenario: Verify the History Page         [90m# test.nov21/testFeature.feature:10[0m
-    [32mGiven [0m[32mthe user logins[0m                   [90m# LoginTest.the_user_logins()[0m
-    [32mWhen [0m[32muser clicks on "[0m[32m[1mHistory[0m[32m" link[0m      [90m# LoginTest.user_clicksOnLink(String)[0m
-    [32mThen [0m[32muser should see the "[0m[32m[1mHistory[0m[32m" page[0m [90m# LoginTest.userShouldSeePage(String)[0m
-[34mhttps://a.uk.practicallaw.demo.thomsonreuters.com/Search/Home.html?transitionType=Default&contextData=(sc.Default)&bhcp=1&OWSessionId=575a794fd5cc445f8771b5c73c3194c8&skipAnonymous=true&firstPage=true[0m
-
-  Scenario: Verify the Favourite Page         [90m# test.nov21/testFeature.feature:15[0m
-    [32mGiven [0m[32mthe user logins[0m                     [90m# LoginTest.the_user_logins()[0m
-    [32mWhen [0m[32muser clicks on "[0m[32m[1mFavourites[0m[32m" link[0m     [90m# LoginTest.user_clicksOnLink(String)[0m
-    [31mThen [0m[31muser should see the "[0m[31m[1mFavourite[0m[31m" page[0m [90m# LoginTest.userShouldSeePage(String)[0m
-      [31mjava.lang.AssertionError
-      	at org.junit.Assert.fail(Assert.java:86)
-      	at org.junit.Assert.assertTrue(Assert.java:41)
-      	at org.junit.Assert.assertTrue(Assert.java:52)
-      	at test.nov21.step_definition.LoginTest.userShouldSeePage(LoginTest.java:61)
-      	at ✽.Then user should see the "Favourite" page(test.nov21/testFeature.feature:18)
-      [0m
+  Scenario: Verify the History Page         # testFeature.feature:10
+    Given the user logins                   # LoginTest.the_user_logins()
+    When user clicks on "History" link      # LoginTest.user_clicksOnLink(String)
+    Then user should see the "History" page # LoginTest.userShouldSeePage(String)

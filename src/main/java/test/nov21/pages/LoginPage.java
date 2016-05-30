@@ -12,8 +12,8 @@ import test.nov21.configuration.AbstractPage;
 @Component
 public class LoginPage extends AbstractPage{
 
-    @Autowired
-    AbstractPage abstractPage;
+//    @Autowired
+//    AbstractPage abstractPage;
 
     public boolean isUsernameValidationErrorDisplayed(String usernameValidationError) {
         return isTextPresent(By.xpath("//span[@id='Username_validationMessage']/span"), usernameValidationError);

@@ -1,6 +1,6 @@
-@firstProg
-Feature: To test the framework
-
+@firstProg1
+Feature: As a User, I want to run Company Logo and History Tests
+  @wip
   Scenario: Verify the Company logo
     Given the user logins
     When user gets to the home page
@@ -12,7 +12,3 @@ Feature: To test the framework
     When user clicks on "History" link
     Then user should see the "History" page
 
-  Scenario: Verify the Favourite Page
-    Given the user logins
-    When user clicks on "Favourites" link
-    Then user should see the "Favourite" page
