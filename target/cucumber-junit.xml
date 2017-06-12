@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="48.7805">
-<testcase classname="As a User, I want to run Company Logo and History Tests" name="Verify the History Page" time="48.7805">
-<system-out><![CDATA[Given the user logins.......................................................passed
-When user clicks on "History" link..........................................passed
-Then user should see the "History" page.....................................passed
-]]></system-out>
-</testcase>
-</testsuite>

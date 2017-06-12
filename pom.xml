@@ -82,7 +82,15 @@
       </build>
 
     <dependencies>
-         <dependency>
+        <dependency>
+            <groupId>net.cucumber</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>1.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/repo/cucumber-reporting-1.2.jar</systemPath>
+        </dependency>
+
+        <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-server</artifactId>
             <version>${selenium_version}</version>
@@ -154,12 +162,7 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.6</version>
         </dependency>
-        <dependency>
-            <groupId>net.cucumber</groupId>
-            <artifactId>cucumber-reporting</artifactId>
-            <version>1.2</version>
-        </dependency>
-        <!--<dependency>-->
+         <!--<dependency>-->
         <!--<groupId>net.masterthought</groupId>-->
         <!--<artifactId>cucumber-reporting</artifactId>-->
         <!--<version>1.2.0</version>-->

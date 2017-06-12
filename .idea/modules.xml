@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpringMavenNov21Proj.iml" filepath="$PROJECT_DIR$/SpringMavenNov21Proj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMavenNov21.iml" filepath="$PROJECT_DIR$/SpringMavenNov21.iml" />
     </modules>
   </component>
 </project>
